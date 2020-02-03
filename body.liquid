@@ -1,0 +1,17 @@
+{% if template contains 'thankyou' %}
+<!-- BEGIN - EasyReviews Addon | www.shopvote.de -->
+<div id="srt-customer-data" style="display:none;">
+<span id="srt-customer-email">{{ customer.email }}</span>
+<span id="srt-customer-reference">{{ cart.order_code }}</span>
+</div>
+<!-- END - EasyReviews Addon | www.shopvote.de -->
+
+<!-- BEGIN - EasyReviews Addon | www.shopvote.de -->
+<script src="https://feedback.shopvote.de/srt-v3.min.js"></script>
+<script type="text/javascript">
+var myToken = "{{ integration['myToken'] }}";
+var mySrc = ('https:' === document.location.protocol ? 'https' : 'http');
+loadSRT(myToken, mySrc);
+</script>
+<!-- END - EasyReviews Addon | www.shopvote.de -->
+{% endif %}
