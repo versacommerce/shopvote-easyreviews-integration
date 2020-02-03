@@ -29,7 +29,7 @@ This file is empty because it's not needed for this integration.
 ## Configuration options for this integration.
 | Label            | Key              | Default Value    | Validates presence? |
 | ---------------- | ---------------- | ---------------- | :------------------:|
-|      myToken     |     myToken      |  Default Value   |          √          |
+|      myToken     |     myToken      |                  |          √          |
 
 
 ##  Customization
